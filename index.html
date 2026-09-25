@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>楊梅高中70週年校慶專刊</title>
+<meta name="description" content="梅高七十 迎曦御風 × 楊梅高中七十週年專刊 線上閱讀網站">
+<link rel="icon" href="assets/badge.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#/home" data-snd="click">
+    <img src="assets/badge.png" alt="楊梅高中校徽" class="brand-badge">
+    <span class="brand-text">
+      <b>楊梅高中70週年校慶專刊</b>
+      <small>梅高七十 · 迎曦御風</small>
+    </span>
+  </a>
+  <nav class="mainnav" id="mainnav" aria-label="主選單">
+    <a href="#/home" data-nav="home">🏠 首頁</a>
+    <a href="#/toc" data-nav="toc">📖 目次</a>
+    <a href="#/browse" data-nav="browse">🖼️ 全頁瀏覽</a>
+    <a href="#/timeline" data-nav="timeline">⏳ 大事紀</a>
+    <a href="#/quiz" data-nav="quiz">🎯 梅岡小學堂</a>
+    <a href="#/bookmarks" data-nav="bookmarks">🔖 我的書籤</a>
+  </nav>
+  <div class="tools">
+    <form class="searchbox" id="topSearch" role="search">
+      <input type="search" id="topQ" placeholder="搜尋專刊內容…（按 / ）" aria-label="搜尋專刊內容">
+      <button type="submit" aria-label="搜尋">🔍</button>
+    </form>
+    <button class="iconbtn" id="soundBtn" title="音效開關" aria-label="音效開關">🔊</button>
+    <button class="iconbtn menu-btn" id="menuBtn" aria-label="開啟選單">☰</button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="footer">
+  <div class="foot-inner">
+    <img src="assets/badge.png" alt="" class="foot-badge">
+    <div>
+      <p><b>《70 迎曦御風 楊梅高中七十週年專刊》</b></p>
+      <p>出版者：桃園市立楊梅高級中等學校 ｜ 發行地址：桃園市楊梅區高獅路5號</p>
+      <p>發行日期：民國107年5月26日 ｜ 本網站依專刊 PDF 全文 220 頁製作，頁面文字由 OCR 自動辨識，僅供檢索參考。</p>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="回到頂端">▲</button>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="zoom" id="zoom" hidden>
+  <div class="zoom-bar">
+    <span id="zoomTitle"></span>
+    <span class="grow"></span>
+    <button id="zoomOut" aria-label="縮小">－</button>
+    <span id="zoomPct">100%</span>
+    <button id="zoomIn" aria-label="放大">＋</button>
+    <button id="zoomClose" aria-label="關閉">✕ 關閉</button>
+  </div>
+  <div class="zoom-stage" id="zoomStage"><img id="zoomImg" alt=""></div>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
